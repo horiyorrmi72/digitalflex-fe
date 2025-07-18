@@ -17,12 +17,9 @@ const Signup = () => {
 
 	useEffect(() => {
 		const roleFromQuery = searchParams.get('role');
-		// console.log('role from query:', roleFromQuery);
 		if (roleFromQuery) {
 			setRole(roleFromQuery);
-			// console.log('Role set to:', roleFromQuery);
 		}
-		// handleSubmit();
 	}, [searchParams]);
 
 	const handleChange = (e) => {
